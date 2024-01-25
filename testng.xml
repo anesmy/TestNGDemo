@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+    <!-- suite - тестовий набір Suite
+    parallel="none" - tests will not run in parallel ("none", "methods", "tests", "classes" - рівні паралельності) -->
+    <test name="Test1">
+        <!-- Parameters and their values are specified here -->
+        <parameter name="language" value="Java" />
+        <parameter name="mentor" value="Serhii" />
+        <!-- Specify number of test files under this tag -->
+        <classes>
+            <class name="org.example.CalculatorInitialTest" />
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <classes>
+            <class name="org.example.CalculatorAdditionalTest" />
+        </classes>
+    </test>
+</suite>
